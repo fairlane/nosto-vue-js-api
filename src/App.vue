@@ -1,21 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <img alt="Vue logo" src="./assets/logo.png">
+    <NostoSlots
+            msg="This are your recos"
+            :slots="slots"
+    />
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NostoSlots from './components/NostoSlots.vue'
+import NostoContext from './NostoContext.js'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+    name: 'app',
+    components: {
+        NostoSlots
+    },
+    computed: {
+        slots() {
+            return [
+                'frontpage-nosto-1',
+                'frontpage-nosto-2'
+            ];
+        }
+    }
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

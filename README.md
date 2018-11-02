@@ -1,4 +1,6 @@
-# vue-recos
+# Vue recos 
+
+This is an example how to fetch recommendations in JSON format from Nosto and use them in your Vuejs app.
 
 ## Project setup
 ```
@@ -13,14 +15,4 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
